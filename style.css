@@ -1,0 +1,503 @@
+ /* ------------------------------
+global styles
+------------------------------ */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font: 85% arial, hevetica, sans-serif;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-image:  url(src1/background.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*=================================*/
+
+
+/*================================*/
+a:link { color:rgb(243, 187, 0);  }
+a:visited { color: rgb(243, 187, 0);  }
+a:focus { color: rgb(243, 187, 0); }
+a:hover { color: rgb(243, 187, 0);  }
+a:active { color: rgb(243, 187, 0); }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; }
+
+h2
+{
+	color: #ffffff;
+	font: 140% georgia, times, "times new roman", serif;
+}
+
+h2 a { text-decoration: none; }
+
+h3
+{
+	text-align: left;
+	
+	fill-opacity:inherit;
+	color: white;
+	font: 110% georgia, times, "times new roman", serif;
+}
+#textshark
+{
+	text-align: left;
+	
+	
+}
+
+#aboutus
+{
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bolder;
+	font-size: 30px;
+}
+/* ------------------------------
+container styles
+------------------------------ */
+
+#container
+{
+	
+	
+	width: auto;
+	height: auto;
+	text-align: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+}
+
+/* ------------------------------
+header styles
+------------------------------ */
+
+#header
+{
+	height: 120px;
+	width: 100%;
+	background-color:#001CA0;
+	
+}
+
+#header h1
+{
+	position: absolute;
+	left: -500em;
+}
+
+#skipmenu
+{
+	position: absolute;
+	left: 0; 
+	top: 5px;
+	width: 645px;
+	text-align: right;
+}
+
+#skipmenu a
+{
+	color: #001CA0;
+	text-decoration: none;
+}
+
+/* ------------------------------
+mainnav styles
+------------------------------ */
+
+#mainnav
+{
+	text-align: center;
+	background: #001CA0;
+	color: white;
+	padding: 13px 0;
+	margin-bottom: 54px;
+}
+
+#mainnav ul
+{
+	margin: 0 0 0 20px;
+	padding: 0;
+	list-style-type: none;
+	
+}
+
+#mainnav li
+{
+	display: inline;
+	padding: 0 40px;
+	
+	
+}
+
+#mainnav li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#mainnav li a:hover
+{
+	text-decoration: none;
+	color: #ffbc48;
+	
+}
+
+/* ------------------------------
+menu styles
+------------------------------ */
+
+#menu
+{
+	float: right;
+	width: 165px;
+	border-left: 1px solid #C5C877;
+	padding-left: 15px;
+}
+
+#menu ul
+{
+	margin: 1em 0;
+	padding: 0;
+}
+
+#menu ul li
+{
+	margin: 0 0 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* ------------------------------
+contents styles
+------------------------------ */
+
+#contents
+{
+	float: left;
+	width: 822px;
+	margin: 0 0 0 486px;
+	text-align: center;
+}
+
+#contents p { line-height: 165%; }
+.blogentry { font-size: 18px;
+	border-bottom: 1px solid #C5C877;  }
+
+
+
+.blogentry ul
+{
+
+	margin: 1em 0;
+	padding: 0;
+	font-size: 95%;
+}
+
+.blogentry li
+{
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 7px;
+}
+
+.imagefloat
+{
+	float: right;
+	padding: 2px;
+	border: px solid #FF0000;
+	margin: 0 0 10px 10px;
+}
+
+/* ------------------------------
+footer styles
+------------------------------ */
+
+#footer
+{
+	clear: both;
+	color: #272900;
+	text-align: right;
+	font-size: 90%;
+	background: #6e7979;
+	padding: 10px;
+	position: fixed;
+    margin-top: 790px;
+    width: -webkit-fill-available;
+
+	
+}
+
+
+
+
+/*------------ 
+adding css for slideshow 
+*/
+
+
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+	position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	display: flex;
+	cursor: pointer;
+	position: absolute;
+	top: 39%;
+	width: auto;
+	padding: 14px;
+	margin-top: 0px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* /* Container for image text
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px; */
+	/* color: white;} */ */
+  
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+
+
+
+  /*==============================
+  CALENDAR
+ */
+
+
+ ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+
+
+/*
+==========
+Footer LINKS
+==========
+*/
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
+
+
+*{
+	padding: Opx;
+	margin: 0px;
+}  
+
+.footerBody{
+	background: #131315;
+}
+
+* a {
+	text-decoration: none;
+}
+ 
+ .footr {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	padding: 0;
+
+}
+
+.footr div {
+	width: 40px;
+	height: 5px;
+	background-color:#9581F4;
+	margin: auto;
+}
+.footr li {
+	position: relative;
+	list-style: none;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	
+}
+
+.footr li span {
+
+border-radius:50%;
+width: 100%;
+height: 100%;
+display: flex !important;
+background: #2a2a2a;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-size: 30px !important;
+transition: 1.5s ease-out;
+
+}
+
+.footr li:hover span{
+	transition: .3s;
+}
+
+.footr li:nth-child(2):hover span{
+	background: #2C3456 !important;
+}
+
+.footr li:nth-child(3):hover span{
+	background: #6A9AEE !important;
+}
+
+.footr  li:nth-child(4) :hover span{
+	background: #CC296C !important;
+}
+
+.footr li:nth-child(5):hover span{
+	background: #2C3456 !important;
+}
+.fa{
+	background-image: url(src1/linked.png);
+}
